@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<features name="paxjdbc.camel.demo-${project.version}" xmlns="http://karaf.apache.org/xmlns/features/v1.0.0">
+
+		<feature name="paxjdbc.demo.mybatis.provider" description="Provides mybatis service support"
+		         version="${project.version}" resolver="(obr)">
+				<feature>paxjdbc.demo.mybatis.provider</feature>
+				<bundle>mvn:org.workspace7.fuse/paxjdbc.demo.mybatis.provider/${project.version}</bundle>
+		</feature>
+
+		<feature name="paxjdbc.demo.mybatis.mappers" description="Provides mybatis mapping files"
+		         version="${project.version}"
+		         resolver="(obr)">
+				<feature>paxjdbc.demo.mybatis.mappers</feature>
+				<bundle>mvn:org.workspace7.fuse/paxjdbc.demo.mybatis.mappers/${project.version}</bundle>
+		</feature>
+
+		<feature name="paxjdbc.demo.camel.app"
+		         description="Provides Camel application using the paxjdbc mybatis demo bundles"
+		         version="${project.version}"
+		         resolver="(obr)">
+				<feature>paxjdbc.demo.camel.app</feature>
+				<bundle>mvn:org.workspace7.fuse/paxjdbc.demo.camel.app/${project.version}</bundle>
+		</feature>
+
+</features>

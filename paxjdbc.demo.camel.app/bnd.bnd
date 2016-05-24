@@ -1,0 +1,12 @@
+Bundle-Version: 1.0.0.${tstamp}
+Bundle-Name: PAX-JDBC Demo Camel mybatis App
+
+Import-Package: \
+	javax.sql,\
+    org.workspace7.pax.jdbc.demo.mappers,\
+    org.workspace7.pax.jdbc.demo.datatypes,\
+	org.apache.camel.component.mybatis,\
+	org.apache.ibatis.transaction.jdbc,\
+	org.apache.ibatis.mapping,\
+	org.apache.ibatis.session,\
+	*
