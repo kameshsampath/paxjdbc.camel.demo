@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE configuration
+				PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+				"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+		<settings>
+				<setting name="useGeneratedKeys" value="false"/>
+		</settings>
+
+		<typeAliases>
+				<typeAlias alias="Person" type="org.workspace7.pax.jdbc.demo.mappers.Person"/>
+		</typeAliases>
+
+		<environments default="development2">
+				<environment id="development2">
+						<transactionManager type="JDBC"/>
+						<dataSource type="JNDI">
+								<!-- PAX-JDBC registers the JNDI name with osgi.jndi.service.name as dataSourceName using Aries JNDI -->
+								<property name="data_source"
+								          value="osgi:service/javax.sql.DataSource/(osgi.jndi.service.name=demodbDS)"/>
+						</dataSource>
+				</environment>
+		</environments>
+
+		<!-- mapping files -->
+		<mappers>
+				<mapper resource="org/workspace7/pax/jdbc/demo/mappers/Person.xml"/>
+		</mappers>
+
+</configuration>

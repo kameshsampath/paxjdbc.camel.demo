@@ -13,6 +13,9 @@
 		<name>A PAX JDBC - mybatis Camel Application</name>
 		<description>The project that use mybatis in Camel Routes using camel-mybatis components</description>
 
+		<properties>
+				<version-paxjdbc.mappers>1.0.0</version-paxjdbc.mappers>
+		</properties>
 
 		<dependencies>
 
@@ -29,6 +32,22 @@
 				<dependency>
 						<groupId>org.apache.camel</groupId>
 						<artifactId>camel-mybatis</artifactId>
+				</dependency>
+
+				<dependency>
+						<groupId>org.workspace7.fuse</groupId>
+						<artifactId>paxjdbc.demo.mybatis.mappers</artifactId>
+						<version>${version-paxjdbc.mappers}</version>
+				</dependency>
+
+				<dependency>
+						<groupId>org.osgi</groupId>
+						<artifactId>org.osgi.core</artifactId>
+				</dependency>
+
+				<dependency>
+						<groupId>org.osgi</groupId>
+						<artifactId>org.osgi.compendium</artifactId>
 				</dependency>
 
 				<!-- Logging -->

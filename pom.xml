@@ -28,7 +28,6 @@
 		</properties>
 
 		<modules>
-				<module>paxjdbc.demo.mybatis.provider</module>
 				<module>paxjdbc.demo.mybatis.mappers</module>
 				<module>paxjdbc.demo.camel.app</module>
 				<module>paxjdbc.camel.demo.features</module>

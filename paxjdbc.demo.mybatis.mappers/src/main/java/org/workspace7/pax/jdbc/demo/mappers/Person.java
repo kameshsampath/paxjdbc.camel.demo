@@ -1,4 +1,4 @@
-package org.workspace7.pax.jdbc.demo.mappers.datatypes;
+package org.workspace7.pax.jdbc.demo.mappers;
 
 public class Person {
 
@@ -28,13 +28,6 @@ public class Person {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
-    }
-
-    public Person() {
-//        DataSource ds = null;
-//        Environment environment = new Environment("",new JdbcTransactionFactory(),ds);
-//        Configuration configuration = new Configuration();
-//        configuration.addMappers();
     }
 
     @Override

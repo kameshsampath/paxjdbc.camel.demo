@@ -2,12 +2,6 @@
 
 <features name="paxjdbc.camel.demo-${project.version}" xmlns="http://karaf.apache.org/xmlns/features/v1.0.0">
 
-		<feature name="paxjdbc.demo.mybatis.provider" description="Provides mybatis service support"
-		         version="${project.version}" resolver="(obr)">
-				<feature>paxjdbc.demo.mybatis.provider</feature>
-				<bundle>mvn:org.workspace7.fuse/paxjdbc.demo.mybatis.provider/${project.version}</bundle>
-		</feature>
-
 		<feature name="paxjdbc.demo.mybatis.mappers" description="Provides mybatis mapping files"
 		         version="${project.version}"
 		         resolver="(obr)">
